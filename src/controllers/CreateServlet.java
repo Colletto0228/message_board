@@ -46,7 +46,7 @@ public class CreateServlet extends HttpServlet {
 
             Timestamp currentTime = new Timestamp(System.currentTimeMillis());
             m.setCreated_at(currentTime);
-            m.setUpdate_at(currentTime);
+            m.setUpdated_at(currentTime);
 
             em.persist(m);
             em.getTransaction().commit();
